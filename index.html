@@ -1,0 +1,27 @@
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ <script src="jquery-ui-1.10.3/ui/jquery-ui.js"></script>
+ <script src="jquery-ui-1.10.3/ui/jquery.ui.autocomplete.js"></script>
+ <script src="base.js"></script>
+ <link rel="stylesheet" href="http://localhost/fb_friends/jquery-ui-1.10.3/themes/base/jquery-ui.css" />
+ <link rel="stylesheet" href="http://localhost/fb_friends/jquery-ui-1.10.3/themes/base/jquery.ui.autocomplete.css" />
+
+
+ <div id="fb-root"></div>
+<script>
+
+
+  // Load the SDK asynchronously
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+<div id="access"></div>
+<input id="name" />
+<input id="fbuid" />
